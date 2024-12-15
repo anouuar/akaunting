@@ -75,6 +75,20 @@
                 </x-button>
             </div>
         </x-form>
+
+        <!-- Boutons supplémentaires -->
+        <div class="mt-4 text-center">
+            <!-- Bouton "Revenir à l'Index" -->
+            <a href="{{ route('auth.custom.index') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Revenir à l'Index
+            </a>
+
+            <!-- Bouton "Créer un compte" -->
+            <a href="{{ route('auth.custom.register') }}" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded ml-3">
+                Créer un compte
+            </a>
+        </div>
+        <!-- Fin des boutons -->
     </x-slot>
 
     <x-script folder="auth" file="common" />
